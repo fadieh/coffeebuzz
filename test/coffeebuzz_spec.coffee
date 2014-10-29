@@ -8,5 +8,5 @@ describe 'Coffeebuzz', ->
 	coffeebuzz = new Coffeebuzz
 
 	it 'knows 3 is divisible by 3', ->
-		expect(coffeebuzz).isDivisibleByThree(3).to.be.true
+		expect(coffeebuzz.isDivisibleByThree(3)).to.be.true
 	
