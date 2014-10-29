@@ -18,3 +18,6 @@ describe 'Coffeebuzz', ->
 
 	it 'knows 3 is not divisible by 5', ->
 		expect(coffeebuzz.isDivisibleByFive(3)).to.be.false
+
+	it 'knows 15 is divisible by 15', ->
+		expect(coffeebuzz.isDivisibleByFifteen(15)).to.be.true
