@@ -1,9 +1,9 @@
 class Coffeebuzz
 
 	isDivisibleByThree: (number) ->
-		true
+		number % 3 == 0
 
 	isDivisibleByFive: (number) ->
-		true
+		number % 5 == 0
 
 module.exports = Coffeebuzz
