@@ -13,6 +13,7 @@ class Coffeebuzz
 		number % divisor == 0
 
 	say: (number) ->
+		return "CoffeeBuzz" if @isDivisibleByFifteen(number)
 		return "Coffee" if @isDivisibleByThree(number)
 		return "Buzz" if @isDivisibleByFive(number)
 

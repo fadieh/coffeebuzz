@@ -35,3 +35,6 @@ describe 'The actual game', ->
 
 	it 'says Buzz not 5', ->
 		expect(coffeebuzz.say(5)).to.equal "Buzz"
+
+	it 'says CoffeeBuzz not 15', ->
+		expect(coffeebuzz.say(15)).to.equal "CoffeeBuzz"
