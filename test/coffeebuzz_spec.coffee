@@ -31,4 +31,7 @@ describe 'The actual game', ->
 	coffeebuzz = new Coffeebuzz
 
 	it 'says Coffee not 3', ->
-		expect(coffeebuzz.say(3)).to.equal('Coffee')
+		expect(coffeebuzz.say(3)).to.equal "Coffee"
+
+	it 'says Buzz not 5', ->
+		expect(coffeebuzz.say(5)).to.equal "Buzz"

@@ -1,15 +1,19 @@
 class Coffeebuzz
 
 	isDivisibleByThree: (number) ->
-		number % 3 == 0
+		@isDivisible(3, number)
 
 	isDivisibleByFive: (number) ->
-		number % 5 == 0
+		@isDivisible(5, number)
 
 	isDivisibleByFifteen: (number) ->
-		number % 15 == 0
+		@isDivisible(15, number)
+
+	isDivisible: (divisor, number) ->
+		number % divisor == 0
 
 	say: (number) ->
-		return "Coffee" if isDivisbleByThree: (number) 
+		return "Coffee" if @isDivisibleByThree(number)
+		return "Buzz" if @isDivisibleByFive(number)
 
 module.exports = Coffeebuzz
