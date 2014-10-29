@@ -16,5 +16,6 @@ class Coffeebuzz
 		return "CoffeeBuzz" if @isDivisibleByFifteen(number)
 		return "Coffee" if @isDivisibleByThree(number)
 		return "Buzz" if @isDivisibleByFive(number)
+		return number
 
 module.exports = Coffeebuzz

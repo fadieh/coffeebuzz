@@ -38,3 +38,6 @@ describe 'The actual game', ->
 
 	it 'says CoffeeBuzz not 15', ->
 		expect(coffeebuzz.say(15)).to.equal "CoffeeBuzz"
+
+	it 'returns the number if not divisible', ->
+		expect(coffeebuzz.say(17)).to.equal 17
