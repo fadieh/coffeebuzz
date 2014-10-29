@@ -18,6 +18,7 @@
   "homepage": "https://github.com/fadieh/coffeebuzz",
   "dependencies": {
     "chai": "^1.9.2",
-    "mocha": "^2.0.1"
+    "mocha": "^2.0.1",
+    "should": "^4.1.0"
   }
 }
