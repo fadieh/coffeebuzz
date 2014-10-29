@@ -9,4 +9,7 @@ class Coffeebuzz
 	isDivisibleByFifteen: (number) ->
 		number % 15 == 0
 
+	say: (number) ->
+		return "Coffee" if isDivisbleByThree: (number) 
+
 module.exports = Coffeebuzz

@@ -2,7 +2,7 @@ chai = require 'chai'
 expect = chai.expect
 Coffeebuzz = require '../src/coffeebuzz'
 
-describe 'Coffeebuzz', ->
+describe 'Knows when a number is', ->
 	coffeebuzz = null
 	before ->
 	coffeebuzz = new Coffeebuzz
@@ -24,3 +24,11 @@ describe 'Coffeebuzz', ->
 
 	it 'knows 10 is not divisible by 15', ->
 		expect(coffeebuzz.isDivisibleByFifteen(10)).to.be.false
+
+describe 'The actual game', ->
+	coffeebuzz = null
+	before ->
+	coffeebuzz = new Coffeebuzz
+
+	it 'says Coffee not 3', ->
+		expect(coffeebuzz.say(3)).to.equal('Coffee')
